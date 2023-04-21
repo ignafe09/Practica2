@@ -118,7 +118,7 @@ class Monitor():
 def delay(d=3):
     time.sleep(random.random()/d)
 
-def delay_car_north() -> None:
+def delay_car_north() -> None: #El tiempo de espera sigue una normal, evitando que sean valores negativos
     x=random.gauss(1,0.5)
     if x<0:
         time.sleep(0.01)
